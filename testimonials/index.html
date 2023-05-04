@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="testimonials">
+        <div class="testimonials-slide active" data-id="1">
+            <h1>Test1</h1>
+            <p>Review 1</p>
+            <button>Next -></button>
+        </div>
+        <div class="testimonials-slide" data-id="2">
+            <h1>Test2</h1>
+            <p>Review 2</p>
+            <button>Next -></button>
+        </div>
+        <div class="testimonials-slide" data-id="3">
+            <h1>Test3</h1>
+            <p>Review 3</p>
+            <button>Next -></button>
+        </div>
+        <div class="testimonials-slide" data-id="4">
+            <h1>Test4</h1>
+            <p>Review 4</p>
+            <button>Next -></button>
+        </div>
+        <div class="testimonials-slide" data-id="5">
+            <h1>Test5</h1>
+            <p>Review 5</p>
+            <button>Next -></button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        $(document).ready(function(){
+            var footer = $('<footer>')
+                footer.addClass('custom-footer');
+                footer.css({
+                    'background-color' : 'darkviolet',
+                    'color' : 'white',
+                    'padding' : '20px',
+                    'text-align' : 'center'
+                });
+                footer.html('<p>Copyright &copy; 2023. All rights reserved.</p>');
+                $('body').append(footer);
+        });
+    </script>
+</body>
+</html>

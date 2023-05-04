@@ -1,0 +1,38 @@
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.testimonials{
+    position: relative;
+    width: 100%;
+    height: 550px;
+    overflow: hidden;
+}
+.testimonials-slide{
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    transition: left 0.5s ease-out;
+    border-color: aqua;
+    border-width: 2px;
+    border-style: dashed;
+    border-radius: 50%;
+    background-color: gold;
+}
+.testimonials-slide.active{
+    left: 0;
+}
+.testimonials-slide p, .testimonials-slide h1{
+    margin: 0;
+}
+.testimonials-slide button{
+    width: 20%;
+}

@@ -1,0 +1,129 @@
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+header{
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+}
+.logo{
+    width: 30px;
+    height: 30px;
+}
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.navBar ul{
+    list-style: none;
+}
+.navBar li{
+    display: inline-block;
+    margin: 10px;
+}
+.navBar a{
+    color: black;
+}
+.burger{
+    display: none;
+}
+.line1, .line2, .line3{
+    width: 30px;
+    height: 5px;
+    background-color: black;
+    margin-top: 5px;
+    border-radius: 20px;
+} 
+@media screen and (max-width: 768px) {
+    body{
+        overflow: hidden;
+    }
+    .burger{
+        cursor: pointer;
+        display: block;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .navBar{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        top: 50px;
+        left: 0;
+        background-color: aquamarine;
+        z-index: 2;
+        background-color: aquamarine;
+        opacity: 0.8;
+    }
+    .navBar.active{
+        position: absolute;
+        transform: translateX(0%);
+        transition: transform 0.5s ease-in;
+    }
+    .navBar li{
+        display: block;
+    }
+}
+.sliderSection{
+    display: flex;  
+    background-color: aquamarine;
+    justify-content: center;
+    height: 700px;
+}
+.slider{
+    position: relative;
+    margin: 20px;
+    overflow: hidden;
+    width: 80%;
+    height: 500px;
+    display: flex;
+}
+.slider img{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+}
+.slider img.current{
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+.carouselSection{
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    height: 800px;
+    width: 100%;
+}
+.carousel{
+    width: 80%;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.carousel div{
+    height: 300px;
+}
+.carousel button{
+    font-size: 0;
+    width: 50px;
+    height: 20px;
+    margin-bottom: 5px;
+}
