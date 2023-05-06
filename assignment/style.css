@@ -106,12 +106,12 @@ header{
     background-color: aquamarine;
     display: flex;
     justify-content: center;
-    height: 800px;
+    height: 600px;
     width: 100%;
 }
 .carousel{
     width: 80%;
-    height: 1000px;
+    height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
